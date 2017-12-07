@@ -1,0 +1,255 @@
+.cl-panel{
+        position: fixed;
+        z-index: 11000;
+        font-weight: 600;
+        font-size: 11px;
+        width: 350px;
+        height: 100%;
+        left: 100%;
+        top: 0;
+        max-width: 85vw; 
+        -webkit-transition: -webkit-transform .6s;
+        -moz-transition: -moz-transform .6s;
+        -o-transition: -o-transform .6s;
+        -ms-transition: -ms-transform .6s;
+        transition: transform .6s;
+    }
+
+    .cl-panels-buttons {
+        background-color: white!important;
+        position: absolute;
+        top: 250px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        z-index: 10002;
+        -webkit-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        -moz-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        -webkit-animation-name: cl-slide-panel;
+        animation-name: cl-slide-panel;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+    }
+
+    .cl-panel-button {
+        width: 38px;
+        height: 32px;
+        position: relative;
+    }
+
+    .cl-panel-button i {
+        position: relative;
+        top: 6px;
+        left: 9px;
+        color: #777777;
+        font-size: 18px;
+    }
+
+    .cl-panel-button span {
+        font-size: 13px;
+        padding: 6px 14px 6px 14px;
+        position: absolute;
+        margin-right: 12px;
+        color: #777777;
+        background-color: #fff;
+        display: inline-block;
+        right: 100%;
+        top: 0px;
+        border-radius: 3px;
+        font-weight: 500;
+        opacity: 0;
+        -webkit-transform-origin: 100% 50%;
+        -moz-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        -o-transform-origin: 100% 50%;
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transition: all 100ms ease-out;
+        -moz-transition: all 100ms ease-out;
+        -o-transition: all 100ms ease-out;
+        transition: all 100ms ease-out;
+        -webkit-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        -moz-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+    }
+
+    .cl-panel-button span:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        top: 50%;
+        right: -4px;
+        margin-top: -5px;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #fff;
+        color: #fff;
+    }
+
+    .cl-panel-button:hover span {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .cl-panel-container {
+        height: 100%;
+        background-color: white;
+        -webkit-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        -moz-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        z-index: 10001;
+        position: absolute;
+        width: 100%;
+    }
+
+    @-webkit-keyframes cl-slide-panel{
+        from{
+            left:0px;
+        }
+        to{
+            left:-38px;
+        }
+    }
+    @keyframes cl-slide-panel{
+        from{
+            left:0px;
+        }
+        to{
+            left:-38px;
+        }
+    }
+
+    .page_info span{
+        color:#a1a1a1;
+        font-size:12px;
+        
+    }
+
+    @-webkit-keyframes cl-slide-info{
+        from{
+            opacity: 0;
+            -webkit-transform: scale(0.5);
+            -moz-transform: scale(0.5);
+            -o-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            transform: scale(0.5);
+        }
+        to{
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+    @keyframes cl-slide-info{
+        from{
+            opacity: 0;
+            -webkit-transform: scale(0.5);
+            -moz-transform: scale(0.5);
+            -o-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            transform: scale(0.5);
+        }
+        to{
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    .page_info b{
+        font-weight:600;
+        color:#777;
+    }
+
+    .open_settings{
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    .cl-panel-container{
+        height: 100%;
+        background-color: white;
+        -webkit-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        -moz-box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        box-shadow: -10px 0px 25px -1px rgba(0,0,0,0.05);
+        z-index: 10001;
+        position: absolute;
+        width: 100%;
+        padding:20px;
+    }
+
+    .cl-panel-container .block{
+        padding-top:10px;
+        padding-bottom:10px;
+        border-bottom:1px solid #e1e1e1;
+        float:left;
+        width:100%;
+    }
+
+    .cl-panel-container .block ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+        float:left;
+        margin-left:-1px;
+        width:100%;
+        margin-top:10px;
+    }
+
+    .cl-panel-container .block ul li{
+        padding:1px;
+        float:left;
+    }
+
+    .cl-panel-container .block ul li a{
+        text-align:center;
+        padding:3px 6px;
+        color:#555;
+        border:1px solid #ccc;
+        font-size:10px;
+        float:left;
+        text-align:center;
+    }
+
+    .cl-panel-container .block ul li a:hover{
+        border:1px solid #333;
+    }
+    .cl-panel-container .block ul li.selected a{
+        background:#333;
+        color:#fff;
+        border:1px solid #333;
+    }
+    .page_info{
+        margin-top:30px;
+    }
+    .cl-panel-container h6{
+        font-size:12px;
+        margin-top:10px;
+        text-transform: uppercase;
+    }
